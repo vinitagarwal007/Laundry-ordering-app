@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/drawable-v24/logout.xml" value="0.179" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/drawable/addbtn.xml" value="0.188" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/drawable/backarrow.xml" value="0.179" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/drawable/cancel.xml" value="0.1" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/drawable/canclebtnback.xml" value="0.179" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/drawable/cross.xml" value="0.179" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/drawable/deliveredbtnback.xml" value="0.179" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/drawable/home.xml" value="0.179" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/drawable/inventory.xml" value="0.179" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/drawable/loginbtnback.xml" value="0.179" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/drawable/orderbackground.xml" value="0.179" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/drawable/ordercatbtnbackground.xml" value="0.179" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/drawable/orderlist.xml" value="0.179" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/drawable/receivedbtnback.xml" value="0.179" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/drawable/selectorstyle.xml" value="0.179" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/drawable/tick.xml" value="0.1" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/drawable/washing_mac.xml" value="0.179" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/layout/activity_home.xml" value="0.1796875" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/layout/activity_order.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/layout/fragment_productpage.xml" value="0.1796875" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/layout/itemdetails.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/layout/orderhistorypopup.xml" value="0.1796875" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/layout/orderhistoryrecv.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/layout/orderrecv.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/KIIT/Desktop/CreativesAppadmin/app/src/main/res/layout/ordersummaryrecv.xml" value="0.1796875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

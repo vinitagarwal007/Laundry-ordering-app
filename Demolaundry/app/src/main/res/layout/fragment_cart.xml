@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home">
+
+    <TextView
+        android:id="@+id/cartheading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Your Laundry Basket Is Ready"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="#F9F9F9"
+        android:elevation="2dp"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cartheading">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cartrecv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F9F9F9" />
+
+        <TextView
+            android:id="@+id/emptycart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Your Bucket Is Empty....\nAdd Your Laundry To Your Bucket"
+            android:textAlignment="center"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/totalview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"
+            android:text="Total Cart:" />
+
+        <Button
+            android:id="@+id/checkoutbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/checkoutbtnback"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="Checkout " />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

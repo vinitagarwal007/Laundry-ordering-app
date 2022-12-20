@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/orderbackground">
+
+    <TextView
+        android:id="@+id/orderheading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="Add/Edit Items Details"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:elevation="2dp"
+        app:cardBackgroundColor="#F9F9F9"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/orderheading">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputProductname"
+                style="@style/parent"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/productname"
+                    style="@style/modifiedEditText"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="Enter Name"
+                    android:maxLines="1"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputProductcat"
+                style="@style/parent"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputProductname">
+
+                <EditText
+                    android:id="@+id/productcat"
+                    style="@style/modifiedEditText"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:enabled="false"
+                    android:hint="Enter Category"
+                    android:maxLines="1"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputproductrateiron"
+                style="@style/parent"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textInputProductcat">
+
+                <EditText
+                    android:id="@+id/productrateiron"
+                    style="@style/modifiedEditText"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:digits="1234567890"
+                    android:hint="Enter Price For Iron"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputProductratewashfold"
+                style="@style/parent"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputproductrateiron">
+
+                <EditText
+                    android:id="@+id/productratewashfold"
+                    style="@style/modifiedEditText"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:digits="1234567890"
+                    android:hint="Enter Price For Wash and Fold"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputProductratewashiron"
+                style="@style/parent"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputProductratewashfold">
+
+                <EditText
+                    android:id="@+id/productratewashiro"
+                    style="@style/modifiedEditText"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:digits="1234567890"
+                    android:hint="Enter Price For Wash and iron"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputProductdryclean"
+                style="@style/parent"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textInputProductratewashiron">
+
+                <EditText
+                    android:id="@+id/productratedryclean"
+                    style="@style/modifiedEditText"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:digits="1234567890"
+                    android:hint="Enter Price For Dry Clean"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/submitbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/deliveredbtnback"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputProductdryclean" />
+
+            <Button
+                android:id="@+id/deletebtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/canclebtnback"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Delete"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/submitbtn" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/backbutton"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:src="@drawable/backarrow"
+        android:layout_marginStart="10dp"
+        android:foregroundGravity="left"
+        app:layout_constraintBottom_toBottomOf="@+id/orderheading"
+        app:layout_constraintStart_toStartOf="@+id/orderheading"
+        app:layout_constraintTop_toTopOf="@+id/orderheading" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
